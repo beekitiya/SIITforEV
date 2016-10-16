@@ -16,6 +16,11 @@
 		7837CFC61DB3BA3B00D90494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7837CFC41DB3BA3B00D90494 /* LaunchScreen.storyboard */; };
 		7837CFD11DB3BA3C00D90494 /* SIITevTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFD01DB3BA3C00D90494 /* SIITevTests.m */; };
 		7837CFDC1DB3BA3C00D90494 /* SIITevUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFDB1DB3BA3C00D90494 /* SIITevUITests.m */; };
+		7837CFEA1DB3DB6700D90494 /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFE91DB3DB6700D90494 /* BackgroundLayer.m */; };
+		7837CFEE1DB3DC0700D90494 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7837CFED1DB3DC0700D90494 /* QuartzCore.framework */; };
+		7837CFF01DB3DCF900D90494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7837CFEF1DB3DCF900D90494 /* UIKit.framework */; };
+		7837CFF31DB3FA5100D90494 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFF21DB3FA5100D90494 /* XYPieChart.m */; };
+		7837CFF51DB3FC5E00D90494 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7837CFF41DB3FC5E00D90494 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,13 @@
 		7837CFD71DB3BA3C00D90494 /* SIITevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIITevUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7837CFDB1DB3BA3C00D90494 /* SIITevUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIITevUITests.m; sourceTree = "<group>"; };
 		7837CFDD1DB3BA3C00D90494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7837CFE91DB3DB6700D90494 /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
+		7837CFEB1DB3DBC800D90494 /* BackgroundLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
+		7837CFED1DB3DC0700D90494 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7837CFEF1DB3DCF900D90494 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7837CFF11DB3FA1800D90494 /* XYPieChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		7837CFF21DB3FA5100D90494 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		7837CFF41DB3FC5E00D90494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7837CFF51DB3FC5E00D90494 /* CoreGraphics.framework in Frameworks */,
+				7837CFF01DB3DCF900D90494 /* UIKit.framework in Frameworks */,
+				7837CFEE1DB3DC0700D90494 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,7 @@
 				7837CFCF1DB3BA3C00D90494 /* SIITevTests */,
 				7837CFDA1DB3BA3C00D90494 /* SIITevUITests */,
 				7837CFB11DB3BA3B00D90494 /* Products */,
+				7837CFEC1DB3DC0700D90494 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +120,10 @@
 		7837CFB21DB3BA3B00D90494 /* SIITev */ = {
 			isa = PBXGroup;
 			children = (
+				7837CFEB1DB3DBC800D90494 /* BackgroundLayer.h */,
+				7837CFE91DB3DB6700D90494 /* BackgroundLayer.m */,
+				7837CFF11DB3FA1800D90494 /* XYPieChart.h */,
+				7837CFF21DB3FA5100D90494 /* XYPieChart.m */,
 				7837CFB61DB3BA3B00D90494 /* AppDelegate.h */,
 				7837CFB71DB3BA3B00D90494 /* AppDelegate.m */,
 				7837CFB91DB3BA3B00D90494 /* FirstViewController.h */,
@@ -143,6 +163,16 @@
 				7837CFDD1DB3BA3C00D90494 /* Info.plist */,
 			);
 			path = SIITevUITests;
+			sourceTree = "<group>";
+		};
+		7837CFEC1DB3DC0700D90494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7837CFF41DB3FC5E00D90494 /* CoreGraphics.framework */,
+				7837CFEF1DB3DCF900D90494 /* UIKit.framework */,
+				7837CFED1DB3DC0700D90494 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,9 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7837CFF31DB3FA5100D90494 /* XYPieChart.m in Sources */,
 				7837CFBE1DB3BA3B00D90494 /* SecondViewController.m in Sources */,
 				7837CFB81DB3BA3B00D90494 /* AppDelegate.m in Sources */,
 				7837CFBB1DB3BA3B00D90494 /* FirstViewController.m in Sources */,
+				7837CFEA1DB3DB6700D90494 /* BackgroundLayer.m in Sources */,
 				7837CFB51DB3BA3B00D90494 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
