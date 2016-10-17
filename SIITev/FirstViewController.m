@@ -31,7 +31,8 @@
     [self.CO2PieChart setLabelColor:[UIColor whiteColor]];
     [self.CO2PieChart setLabelShadowColor:[UIColor blackColor]];
     [self.CO2PieChart setShowPercentage:YES];
-    [self.CO2PieChart setPieBackgroundColor:[UIColor whiteColor]];
+    [self.CO2PieChart setPieBackgroundColor:[UIColor clearColor]];
+    
     
     //To make the chart at the center of view
     [self.CO2PieChart setPieCenter:CGPointMake(self.CO2PieChart.bounds.origin.x + viewWidth, self.CO2PieChart.bounds.origin.y + viewHeight)];
@@ -39,6 +40,10 @@
     //Method to display the pie chart with values.
     [self.CO2PieChart reloadData];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewDidLayoutSubviews {
+
 }
 
 
@@ -71,11 +76,11 @@
     CGFloat value = 0.0;
     if(index % 2 == 0)
     {
-        value = 25;
+        value = 34;
     }
     else
     {
-        value = 75;
+        value = 66;
     }
     return value;
 }
@@ -94,6 +99,5 @@
     }
     return color;
 }
-
 
 @end

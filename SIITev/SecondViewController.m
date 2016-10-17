@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 #import "BackgroundLayer.h"
+#import <QuartzCore/QuartzCore.h> 
 
 @interface SecondViewController ()
 
@@ -15,8 +16,31 @@
 
 @implementation SecondViewController
 
+@synthesize slices = _slices;
+@synthesize sliceColors = _sliceColors;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    float viewWidth = self.CostPieChart.bounds.size.width / 2;
+    float viewHeight = self.CostPieChart.bounds.size.height / 2;
+    [self.CostPieChart setDelegate:self];
+    [self.CostPieChart setDataSource:self];
+    [self.CostPieChart setStartPieAngle:M_PI_2];
+    [self.CostPieChart setAnimationSpeed:1.5];
+    [self.CostPieChart setLabelColor:[UIColor whiteColor]];
+    [self.CostPieChart setLabelShadowColor:[UIColor blackColor]];
+    [self.CostPieChart setShowPercentage:YES];
+    [self.CostPieChart setPieBackgroundColor:[UIColor clearColor]];
+    
+    
+    //To make the chart at the center of view
+    [self.CostPieChart setPieCenter:CGPointMake(self.CostPieChart.bounds.origin.x + viewWidth, self.CostPieChart.bounds.origin.y + viewHeight)];
+    
+    //Method to display the pie chart with values.
+    [self.CostPieChart reloadData];
+    // Do any additional setup after loading the view, typically from a nib.
+
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -39,5 +63,39 @@
     [self.view.layer insertSublayer:bgLayer atIndex:0];
 }
 
+//Specify the number of Sectors in the chart
+- (NSUInteger)numberOfSlicesInPieChart:(XYPieChart *)pieChart
+{
+    return 2;
+}
+//Specify the Value for each sector
+- (CGFloat)pieChart:(XYPieChart *)pieChart valueForSliceAtIndex:(NSUInteger)index
+{
+    CGFloat value = 0.0;
+    if(index % 2 == 0)
+    {
+        value = 34;
+    }
+    else
+    {
+        value = 66;
+    }
+    return value;
+}
+
+//Specify color for each sector
+- (UIColor *)pieChart:(XYPieChart *)pieChart colorForSliceAtIndex:(NSUInteger)index
+{
+    UIColor *color;
+    if(index%2 == 0)
+    {
+        color = [UIColor redColor];
+    }
+    else
+    {
+        color = [UIColor greenColor];
+    }
+    return color;
+}
 
 @end

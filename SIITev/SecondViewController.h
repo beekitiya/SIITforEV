@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XYPieChart.h"
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <XYPieChartDelegate, XYPieChartDataSource>
 
-
+@property (weak, nonatomic) IBOutlet XYPieChart *CostPieChart;
+@property(nonatomic, strong) NSMutableArray *slices;
+@property(nonatomic, strong) NSArray        *sliceColors;
 @end
 
