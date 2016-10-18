@@ -21,6 +21,7 @@
 		7837CFF01DB3DCF900D90494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7837CFEF1DB3DCF900D90494 /* UIKit.framework */; };
 		7837CFF31DB3FA5100D90494 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFF21DB3FA5100D90494 /* XYPieChart.m */; };
 		7837CFF51DB3FC5E00D90494 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7837CFF41DB3FC5E00D90494 /* CoreGraphics.framework */; };
+		787D2E151DB5703700B43A4A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 787D2E141DB5703700B43A4A /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		7837CFF11DB3FA1800D90494 /* XYPieChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
 		7837CFF21DB3FA5100D90494 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
 		7837CFF41DB3FC5E00D90494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		787D2E131DB5703700B43A4A /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		787D2E141DB5703700B43A4A /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				7837CFBA1DB3BA3B00D90494 /* FirstViewController.m */,
 				7837CFBC1DB3BA3B00D90494 /* SecondViewController.h */,
 				7837CFBD1DB3BA3B00D90494 /* SecondViewController.m */,
+				787D2E131DB5703700B43A4A /* ThirdViewController.h */,
+				787D2E141DB5703700B43A4A /* ThirdViewController.m */,
 				7837CFBF1DB3BA3B00D90494 /* Main.storyboard */,
 				7837CFC21DB3BA3B00D90494 /* Assets.xcassets */,
 				7837CFC41DB3BA3B00D90494 /* LaunchScreen.storyboard */,
@@ -314,6 +319,7 @@
 				7837CFBB1DB3BA3B00D90494 /* FirstViewController.m in Sources */,
 				7837CFEA1DB3DB6700D90494 /* BackgroundLayer.m in Sources */,
 				7837CFB51DB3BA3B00D90494 /* main.m in Sources */,
+				787D2E151DB5703700B43A4A /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +551,7 @@
 				7837CFE21DB3BA3C00D90494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7837CFE31DB3BA3C00D90494 /* Build configuration list for PBXNativeTarget "SIITevTests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +560,7 @@
 				7837CFE51DB3BA3C00D90494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7837CFE61DB3BA3C00D90494 /* Build configuration list for PBXNativeTarget "SIITevUITests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +569,7 @@
 				7837CFE81DB3BA3C00D90494 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

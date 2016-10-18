@@ -11,6 +11,8 @@
 
 @interface FirstViewController : UIViewController <XYPieChartDelegate, XYPieChartDataSource>
 @property (weak, nonatomic) IBOutlet XYPieChart *CO2PieChart;
+@property (weak, nonatomic) IBOutlet UIView *EmissionGas;
+@property (weak, nonatomic) IBOutlet UIView *EmissionElec;
 
 @property(nonatomic, strong) NSMutableArray *slices;
 @property(nonatomic, strong) NSArray        *sliceColors;

@@ -39,6 +39,12 @@
     
     //Method to display the pie chart with values.
     [self.CO2PieChart reloadData];
+    
+    _EmissionGas.layer.borderWidth = 1.0f;
+    _EmissionGas.layer.borderColor = [[UIColor colorWithRed:(204/255.0) green:(42/255.0) blue:(65/255.0) alpha:1.0]CGColor];
+    
+    _EmissionElec.layer.borderWidth = 1.0f;
+    _EmissionElec.layer.borderColor = [[UIColor colorWithRed:(100/255.0) green:(144/255.0) blue:(138/255.0) alpha:1.0]CGColor];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -56,14 +62,14 @@
     return UIStatusBarStyleLightContent;
 }
 
-- (void)viewWillAppear:(BOOL)animated
+/*- (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     //Add gradient background
     CAGradientLayer *bgLayer = [BackgroundLayer blueGradient];
     bgLayer.frame = self.view.bounds;
     [self.view.layer insertSublayer:bgLayer atIndex:0];
-}
+}*/
 
 //Specify the number of Sectors in the chart
 - (NSUInteger)numberOfSlicesInPieChart:(XYPieChart *)pieChart
@@ -91,11 +97,11 @@
     UIColor *color;
     if(index%2 == 0)
     {
-        color = [UIColor redColor];
+        color = [UIColor colorWithRed:(100/255.0) green:(144/255.0) blue:(138/255.0) alpha:1.0];
     }
     else
     {
-        color = [UIColor greenColor];
+        color = [UIColor colorWithRed:(204/255.0) green:(42/255.0) blue:(65/255.0) alpha:1.0];
     }
     return color;
 }
