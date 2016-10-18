@@ -9,16 +9,28 @@
 #import "ThirdViewController.h"
 #import "BackgroundLayer.h"
 #import <QuartzCore/QuartzCore.h>
+#import "WaterProgress.h"
 
 @interface ThirdViewController ()
-
+@property (nonatomic) BOOL isAnimating;
 @end
 
 @implementation ThirdViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    /*self.waterView = [[WaterProgress alloc] initWithFrame:self.view.bounds];
+    self.waterView.center = self.view.center;
+    [self.view addSubview:self.waterView];*/
+    
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(updateAnimation)];
+    [self.waterView addGestureRecognizer:gesture];
+    
+    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(updatePercent:)];
+    [self.waterView addGestureRecognizer:panGesture];
+    
+    self.isAnimating = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +49,25 @@
     CAGradientLayer *bgLayer = [BackgroundLayer blueGradient];
     bgLayer.frame = self.view.bounds;
     [self.view.layer insertSublayer:bgLayer atIndex:0];
+}
+
+- (void)updatePercent:(UIPanGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateChanged || gesture.state == UIGestureRecognizerStateEnded) {
+        CGPoint location = [gesture locationInView:self.waterView];
+        NSUInteger percent = 100 - 50 * location.y / CGRectGetHeight(self.waterView.bounds);
+        [self.waterView updateWithPercentCompletion:percent];
+    }
+}
+
+- (void)updateAnimation
+{
+    self.isAnimating = !self.isAnimating;
+    if (self.isAnimating) {
+        [self.waterView startAnimation];
+    } else {
+        [self.waterView stopAnimation];
+    }
 }
 
 /*

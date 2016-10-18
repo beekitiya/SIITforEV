@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WaterProgress.h"
 
 @interface ThirdViewController : UIViewController
+@property (strong, nonatomic) IBOutlet WaterProgress *waterView;
 
 @end

@@ -21,6 +21,7 @@
 		7837CFF01DB3DCF900D90494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7837CFEF1DB3DCF900D90494 /* UIKit.framework */; };
 		7837CFF31DB3FA5100D90494 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFF21DB3FA5100D90494 /* XYPieChart.m */; };
 		7837CFF51DB3FC5E00D90494 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7837CFF41DB3FC5E00D90494 /* CoreGraphics.framework */; };
+		783E04141DB6CEAB004C90AB /* WaterProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 783E04131DB6CEAB004C90AB /* WaterProgress.m */; };
 		787D2E151DB5703700B43A4A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 787D2E141DB5703700B43A4A /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		7837CFF11DB3FA1800D90494 /* XYPieChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
 		7837CFF21DB3FA5100D90494 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
 		7837CFF41DB3FC5E00D90494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		783E04121DB6CEAB004C90AB /* WaterProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterProgress.h; sourceTree = "<group>"; };
+		783E04131DB6CEAB004C90AB /* WaterProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterProgress.m; sourceTree = "<group>"; };
 		787D2E131DB5703700B43A4A /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		787D2E141DB5703700B43A4A /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +128,8 @@
 			children = (
 				7837CFEB1DB3DBC800D90494 /* BackgroundLayer.h */,
 				7837CFE91DB3DB6700D90494 /* BackgroundLayer.m */,
+				783E04121DB6CEAB004C90AB /* WaterProgress.h */,
+				783E04131DB6CEAB004C90AB /* WaterProgress.m */,
 				7837CFF11DB3FA1800D90494 /* XYPieChart.h */,
 				7837CFF21DB3FA5100D90494 /* XYPieChart.m */,
 				7837CFB61DB3BA3B00D90494 /* AppDelegate.h */,
@@ -315,6 +320,7 @@
 			files = (
 				7837CFF31DB3FA5100D90494 /* XYPieChart.m in Sources */,
 				7837CFBE1DB3BA3B00D90494 /* SecondViewController.m in Sources */,
+				783E04141DB6CEAB004C90AB /* WaterProgress.m in Sources */,
 				7837CFB81DB3BA3B00D90494 /* AppDelegate.m in Sources */,
 				7837CFBB1DB3BA3B00D90494 /* FirstViewController.m in Sources */,
 				7837CFEA1DB3DB6700D90494 /* BackgroundLayer.m in Sources */,

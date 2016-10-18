@@ -74,11 +74,11 @@
     CGFloat value = 0.0;
     if(index % 2 == 0)
     {
-        value = 34;
+        value = 20;
     }
     else
     {
-        value = 66;
+        value = 80;
     }
     return value;
 }
@@ -89,11 +89,11 @@
     UIColor *color;
     if(index%2 == 0)
     {
-        color = [UIColor redColor];
+        color = [UIColor colorWithRed:(7/255.0) green:(158/255.0) blue:(166/255.0) alpha:1.0];
     }
     else
     {
-        color = [UIColor greenColor];
+        color = [UIColor colorWithRed:(245/255.0) green:(190/255.0) blue:(88/255.0) alpha:1.0];
     }
     return color;
 }
