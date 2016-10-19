@@ -13,10 +13,10 @@ static const CGFloat kDefaultAmplitude          = 1.0f;
 static const CGFloat kDefaultIdleAmplitude      = 0.01f;
 static const CGFloat kDefaultPhaseShift         = -0.15f;
 static const CGFloat kDefaultDensity            = 5.0f;
-static const NSUInteger kDefaultPercent         = 0;
+static const NSUInteger kDefaultPercent         = 50;
 static const NSUInteger kDefaultMaximumPercent  = 100;
 static const CGFloat kDefaultPrimaryLineWidth   = 3.0f;
-static const CGFloat kDefaultFontSize           = 20.f;
+static const CGFloat kDefaultFontSize           = 50.f;
 static const CGFloat kDefaultMinimumFontSize    = 12.f;
 
 @interface WaterProgress ()
@@ -91,7 +91,8 @@ static const CGFloat kDefaultMinimumFontSize    = 12.f;
     // Default background color is transparent.
     self.backgroundColor = [UIColor colorWithRed:(63/255.0) green:(50/255.0) blue:(77/255.0) alpha:1.0];
     self.waveColor = [UIColor colorWithRed:(255/255.0) green:(234/255.0) blue:(204/255.0) alpha:1.0];
-    
+    //self.layer.borderWidth = 2.0f;
+    //self.layer.borderColor = [[UIColor colorWithRed:(63/255.0) green:(50/255.0) blue:(77/255.0) alpha:1.0]CGColor];
     
     self.completionInPercent = kDefaultPercent;
     

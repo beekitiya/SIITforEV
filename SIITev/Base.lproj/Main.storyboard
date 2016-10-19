@@ -97,6 +97,32 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j69-CQ-Ysv" customClass="XYPieChart">
                                 <frame key="frameInset" minX="112" minY="176" width="544" height="476"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SLv-h9-rPW">
+                                <frame key="frameInset" minX="75" minY="686" width="300" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gasoline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ9-cG-oSd">
+                                        <frame key="frameInset" minX="93" minY="205" width="122" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
+                                        <color key="textColor" red="0.96078431372549022" green="0.74509803921568629" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jac-Af-Czi">
+                                <frame key="frameInset" minX="397" minY="686" width="300" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0i-lX-3Go">
+                                        <frame key="frameInset" minX="132" minY="208" width="37" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" red="0.027450980392156862" green="0.61960784313725492" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.093621574779999994" green="0.051956251840000002" blue="0.2268028846" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -111,6 +137,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Cost" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="CostEV" destination="Jac-Af-Czi" id="KeI-gG-6jK"/>
+                        <outlet property="CostGas" destination="SLv-h9-rPW" id="31u-0Z-fj4"/>
                         <outlet property="CostPieChart" destination="j69-CQ-Ysv" id="8zd-IY-M4h"/>
                     </connections>
                 </viewController>
@@ -137,7 +165,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hf7-wF-d0n" customClass="WaterProgress">
-                                <frame key="frameInset" minX="112" minY="152" width="544" height="476"/>
+                                <frame key="frameInset" minX="112" minY="147" width="544" height="476"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.093621574779999994" green="0.051956251840000002" blue="0.2268028846" alpha="1" colorSpace="calibratedRGB"/>

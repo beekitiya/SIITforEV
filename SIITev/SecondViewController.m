@@ -39,9 +39,12 @@
     
     //Method to display the pie chart with values.
     [self.CostPieChart reloadData];
-    // Do any additional setup after loading the view, typically from a nib.
-
-    // Do any additional setup after loading the view, typically from a nib.
+   
+    _CostGas.layer.borderWidth = 1.0f;
+    _CostGas.layer.borderColor = [[UIColor colorWithRed:(245/255.0) green:(190/255.0) blue:(88/255.0) alpha:1.0]CGColor];
+    
+    _CostEV.layer.borderWidth = 1.0f;
+    _CostEV.layer.borderColor = [[UIColor colorWithRed:(7/255.0) green:(158/255.0) blue:(166/255.0) alpha:1.0]CGColor];
 }
 
 

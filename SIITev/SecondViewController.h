@@ -12,6 +12,8 @@
 @interface SecondViewController : UIViewController <XYPieChartDelegate, XYPieChartDataSource>
 
 @property (weak, nonatomic) IBOutlet XYPieChart *CostPieChart;
+@property (strong, nonatomic) IBOutlet UIView *CostGas;
+@property (strong, nonatomic) IBOutlet UIView *CostEV;
 @property(nonatomic, strong) NSMutableArray *slices;
 @property(nonatomic, strong) NSArray        *sliceColors;
 @end

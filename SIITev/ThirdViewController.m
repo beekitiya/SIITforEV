@@ -55,7 +55,7 @@
 {
     if (gesture.state == UIGestureRecognizerStateChanged || gesture.state == UIGestureRecognizerStateEnded) {
         CGPoint location = [gesture locationInView:self.waterView];
-        NSUInteger percent = 100 - 50 * location.y / CGRectGetHeight(self.waterView.bounds);
+        NSUInteger percent = 100 - 100 * location.y / CGRectGetHeight(self.waterView.bounds);
         [self.waterView updateWithPercentCompletion:percent];
     }
 }
