@@ -10,7 +10,6 @@
 #import "XYPieChart.h"
 
 @interface MainViewController : UIViewController 
+@property (strong, nonatomic) IBOutlet UILabel *nameDate;
 @property (strong, nonatomic) IBOutlet UILabel *date;
-@property (strong, nonatomic) IBOutlet UILabel *time;
-
 @end

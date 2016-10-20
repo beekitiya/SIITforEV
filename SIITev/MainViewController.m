@@ -21,14 +21,14 @@
     
     NSString *todayDate, *todayTime;
     NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"dd MMM yyyy"];
+    [formatter setDateFormat:@"MMM dd, yyyy h:mm a"];
     todayDate = [formatter stringFromDate:[NSDate date]];
     _date.text = todayDate;
     
     NSDateFormatter *formatterTime = [[NSDateFormatter alloc]init];
-    [formatterTime setDateFormat:@"h:mm a"];
+    [formatterTime setDateFormat:@"EEEE"];
     todayTime = [formatterTime stringFromDate:[NSDate date]];
-    _time.text = todayTime;
+    _nameDate.text = todayTime;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,6 +47,11 @@
     CAGradientLayer *bgLayer = [BackgroundLayer blueGradient];
     bgLayer.frame = self.view.bounds;
     [self.view.layer insertSublayer:bgLayer atIndex:0];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
 }
 
 /*
