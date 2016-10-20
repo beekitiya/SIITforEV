@@ -13,7 +13,7 @@ static const CGFloat kDefaultAmplitude          = 1.0f;
 static const CGFloat kDefaultIdleAmplitude      = 0.01f;
 static const CGFloat kDefaultPhaseShift         = -0.15f;
 static const CGFloat kDefaultDensity            = 5.0f;
-static const NSUInteger kDefaultPercent         = 50;
+static const NSUInteger kDefaultPercent         = 89;
 static const NSUInteger kDefaultMaximumPercent  = 100;
 static const CGFloat kDefaultPrimaryLineWidth   = 3.0f;
 static const CGFloat kDefaultFontSize           = 50.f;
@@ -136,7 +136,7 @@ static const CGFloat kDefaultMinimumFontSize    = 12.f;
 {
     if (!_textLayer) {
         _textLayer = [CATextLayer layer];
-        _textLayer.bounds = CGRectMake(0, 0, CGRectGetWidth(self.bounds), MIN(CGRectGetHeight(self.bounds), 40.f));
+        _textLayer.bounds = CGRectMake(0, 0, CGRectGetWidth(self.bounds), MIN(CGRectGetHeight(self.bounds), 80.f));
         _textLayer.position = self.center;
         _textLayer.alignmentMode = kCAAlignmentCenter;
         _textLayer.string = [NSString stringWithFormat:@"%zd %%", self.completionInPercent];
