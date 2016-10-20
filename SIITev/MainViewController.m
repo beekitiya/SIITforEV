@@ -29,6 +29,13 @@
     [formatterTime setDateFormat:@"EEEE"];
     todayTime = [formatterTime stringFromDate:[NSDate date]];
     _nameDate.text = todayTime;
+    
+    _consumption.layer.borderWidth = 1.0f;
+    _consumption.layer.borderColor = [[UIColor colorWithRed:(255/255.0) green:(255/255.0) blue:(255/255.0) alpha:0.5]CGColor];
+    
+    _distance.layer.borderWidth = 1.0f;
+    _distance.layer.borderColor = [[UIColor colorWithRed:(255/255.0) green:(255/255.0) blue:(255/255.0) alpha:0.5]CGColor];
+
 }
 
 - (void)didReceiveMemoryWarning {

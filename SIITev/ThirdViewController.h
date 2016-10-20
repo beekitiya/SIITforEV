@@ -11,5 +11,7 @@
 
 @interface ThirdViewController : UIViewController
 @property (strong, nonatomic) IBOutlet WaterProgress *waterView;
+@property (strong, nonatomic) IBOutlet UILabel *nameDate;
+@property (strong, nonatomic) IBOutlet UILabel *date;
 
 @end

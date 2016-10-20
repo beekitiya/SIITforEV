@@ -12,4 +12,6 @@
 @interface MainViewController : UIViewController 
 @property (strong, nonatomic) IBOutlet UILabel *nameDate;
 @property (strong, nonatomic) IBOutlet UILabel *date;
+@property (strong, nonatomic) IBOutlet UIView *distance;
+@property (strong, nonatomic) IBOutlet UIView *consumption;
 @end

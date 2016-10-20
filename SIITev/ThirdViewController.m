@@ -19,6 +19,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *todayDate, *todayTime;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"MMM dd, yyyy h:mm a"];
+    todayDate = [formatter stringFromDate:[NSDate date]];
+    _date.text = todayDate;
+    
+    NSDateFormatter *formatterTime = [[NSDateFormatter alloc]init];
+    [formatterTime setDateFormat:@"EEEE"];
+    todayTime = [formatterTime stringFromDate:[NSDate date]];
+    _nameDate.text = todayTime;
     
     /*self.waterView = [[WaterProgress alloc] initWithFrame:self.view.bounds];
     self.waterView.center = self.view.center;
