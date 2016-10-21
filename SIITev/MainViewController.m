@@ -47,18 +47,13 @@
     todayTime = [formatterTime stringFromDate:[NSDate date]];
     _nameDate.text = todayTime;
     
-    _consumption.layer.borderWidth = 1.0f;
-    _consumption.layer.borderColor = [[UIColor colorWithRed:(104/255.0) green:(80/255.0) blue:(150/255.0) alpha:1.0]CGColor];
-    
-    _distance.layer.borderWidth = 1.0f;
-    _distance.layer.borderColor = [[UIColor colorWithRed:(104/255.0) green:(80/255.0) blue:(150/255.0) alpha:1.0]CGColor];
-    
     float viewWidth = self.EmissionPieChart.bounds.size.width / 2;
     float viewHeight = self.EmissionPieChart.bounds.size.height / 2;
     [self.EmissionPieChart setDelegate:self];
     [self.EmissionPieChart setDataSource:self];
     [self.EmissionPieChart setStartPieAngle:M_PI_2];
     [self.EmissionPieChart setAnimationSpeed:1.5];
+    [self.EmissionPieChart setLabelFont:[UIFont fontWithName:@"Helvetica Neue" size:20]];
     [self.EmissionPieChart setLabelColor:[UIColor whiteColor]];
     [self.EmissionPieChart setLabelShadowColor:[UIColor blackColor]];
     [self.EmissionPieChart setShowPercentage:YES];
@@ -75,6 +70,7 @@
     [self.CostPieChart setDataSource:self];
     [self.CostPieChart setStartPieAngle:M_PI_2];
     [self.CostPieChart setAnimationSpeed:1.5];
+    [self.CostPieChart setLabelFont:[UIFont fontWithName:@"Helvetica Neue" size:20]];
     [self.CostPieChart setLabelColor:[UIColor whiteColor]];
     [self.CostPieChart setLabelShadowColor:[UIColor blackColor]];
     [self.CostPieChart setShowPercentage:YES];
@@ -154,9 +150,9 @@
     if(pieChart == self.CostPieChart)
     {
         if(index%2 == 0) {
-            color = [UIColor colorWithRed:(77/255.0) green:(126/255.0) blue:(236/255.0) alpha:1.0]; //EV
+            color = [UIColor colorWithRed:(111/255.0) green:(206/255.0) blue:(132/255.0) alpha:1.0]; //EV
         } else {
-            color = [UIColor colorWithRed:(212/255.0) green:(120/255.0) blue:(42/255.0) alpha:1.0]; //Gas
+            color = [UIColor colorWithRed:(248/255.0) green:(113/255.0) blue:(110/255.0) alpha:1.0]; //Gas
         }
     }
     else

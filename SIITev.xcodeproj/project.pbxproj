@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7806F6BA1DB772A400058E0D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7806F6B91DB772A400058E0D /* MainViewController.m */; };
-		781CFC531DB97175009BD4AC /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781CFC521DB97175009BD4AC /* DrawViewController.m */; };
+		7831C9961DBA7C7C0016FEB9 /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 7831C9951DBA7C7C0016FEB9 /* battery.png */; };
+		7831C99A1DBA87C70016FEB9 /* ble.png in Resources */ = {isa = PBXBuildFile; fileRef = 7831C9991DBA87C70016FEB9 /* ble.png */; };
+		7831C99C1DBA88750016FEB9 /* Siit_tu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7831C99B1DBA88750016FEB9 /* Siit_tu.gif */; };
+		7831C99E1DBA91BE0016FEB9 /* air.png in Resources */ = {isa = PBXBuildFile; fileRef = 7831C99D1DBA91BE0016FEB9 /* air.png */; };
 		7837CFB51DB3BA3B00D90494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFB41DB3BA3B00D90494 /* main.m */; };
 		7837CFB81DB3BA3B00D90494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFB71DB3BA3B00D90494 /* AppDelegate.m */; };
 		7837CFBB1DB3BA3B00D90494 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFBA1DB3BA3B00D90494 /* FirstViewController.m */; };
@@ -49,8 +52,10 @@
 /* Begin PBXFileReference section */
 		7806F6B81DB772A400058E0D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		7806F6B91DB772A400058E0D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		781CFC511DB97175009BD4AC /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
-		781CFC521DB97175009BD4AC /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
+		7831C9951DBA7C7C0016FEB9 /* battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battery.png; path = ../../battery.png; sourceTree = "<group>"; };
+		7831C9991DBA87C70016FEB9 /* ble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ble.png; path = ../../ble.png; sourceTree = "<group>"; };
+		7831C99B1DBA88750016FEB9 /* Siit_tu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Siit_tu.gif; path = ../../../Downloads/Siit_tu.gif; sourceTree = "<group>"; };
+		7831C99D1DBA91BE0016FEB9 /* air.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = air.png; path = ../../air.png; sourceTree = "<group>"; };
 		7837CFB01DB3BA3B00D90494 /* SIITev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIITev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7837CFB41DB3BA3B00D90494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7837CFB61DB3BA3B00D90494 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,8 +147,6 @@
 				783E04131DB6CEAB004C90AB /* WaterProgress.m */,
 				7837CFF11DB3FA1800D90494 /* XYPieChart.h */,
 				7837CFF21DB3FA5100D90494 /* XYPieChart.m */,
-				781CFC511DB97175009BD4AC /* DrawViewController.h */,
-				781CFC521DB97175009BD4AC /* DrawViewController.m */,
 				7837CFB61DB3BA3B00D90494 /* AppDelegate.h */,
 				7837CFB71DB3BA3B00D90494 /* AppDelegate.m */,
 				7806F6B81DB772A400058E0D /* MainViewController.h */,
@@ -166,6 +169,10 @@
 		7837CFB31DB3BA3B00D90494 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7831C99D1DBA91BE0016FEB9 /* air.png */,
+				7831C99B1DBA88750016FEB9 /* Siit_tu.gif */,
+				7831C9991DBA87C70016FEB9 /* ble.png */,
+				7831C9951DBA7C7C0016FEB9 /* battery.png */,
 				789CD7061DBA72C40068FD0D /* cost.png */,
 				789CD6FF1DB9FF4A0068FD0D /* emission.png */,
 				7837CFB41DB3BA3B00D90494 /* main.m */,
@@ -308,9 +315,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7831C99E1DBA91BE0016FEB9 /* air.png in Resources */,
+				7831C99C1DBA88750016FEB9 /* Siit_tu.gif in Resources */,
 				7837CFC61DB3BA3B00D90494 /* LaunchScreen.storyboard in Resources */,
+				7831C9961DBA7C7C0016FEB9 /* battery.png in Resources */,
 				789CD7071DBA72C40068FD0D /* cost.png in Resources */,
 				789CD7001DB9FF4A0068FD0D /* emission.png in Resources */,
+				7831C99A1DBA87C70016FEB9 /* ble.png in Resources */,
 				7837CFC31DB3BA3B00D90494 /* Assets.xcassets in Resources */,
 				7837CFC11DB3BA3B00D90494 /* Main.storyboard in Resources */,
 			);
@@ -343,7 +354,6 @@
 				7837CFB81DB3BA3B00D90494 /* AppDelegate.m in Sources */,
 				7806F6BA1DB772A400058E0D /* MainViewController.m in Sources */,
 				7837CFBB1DB3BA3B00D90494 /* FirstViewController.m in Sources */,
-				781CFC531DB97175009BD4AC /* DrawViewController.m in Sources */,
 				7837CFEA1DB3DB6700D90494 /* BackgroundLayer.m in Sources */,
 				7837CFB51DB3BA3B00D90494 /* main.m in Sources */,
 				787D2E151DB5703700B43A4A /* ThirdViewController.m in Sources */,
