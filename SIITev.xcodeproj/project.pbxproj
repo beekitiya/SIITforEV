@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7806F6BA1DB772A400058E0D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7806F6B91DB772A400058E0D /* MainViewController.m */; };
+		781CFC531DB97175009BD4AC /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 781CFC521DB97175009BD4AC /* DrawViewController.m */; };
 		7837CFB51DB3BA3B00D90494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFB41DB3BA3B00D90494 /* main.m */; };
 		7837CFB81DB3BA3B00D90494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFB71DB3BA3B00D90494 /* AppDelegate.m */; };
 		7837CFBB1DB3BA3B00D90494 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7837CFBA1DB3BA3B00D90494 /* FirstViewController.m */; };
@@ -24,6 +25,8 @@
 		7837CFF51DB3FC5E00D90494 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7837CFF41DB3FC5E00D90494 /* CoreGraphics.framework */; };
 		783E04141DB6CEAB004C90AB /* WaterProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 783E04131DB6CEAB004C90AB /* WaterProgress.m */; };
 		787D2E151DB5703700B43A4A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 787D2E141DB5703700B43A4A /* ThirdViewController.m */; };
+		789CD7001DB9FF4A0068FD0D /* emission.png in Resources */ = {isa = PBXBuildFile; fileRef = 789CD6FF1DB9FF4A0068FD0D /* emission.png */; };
+		789CD7071DBA72C40068FD0D /* cost.png in Resources */ = {isa = PBXBuildFile; fileRef = 789CD7061DBA72C40068FD0D /* cost.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,8 @@
 /* Begin PBXFileReference section */
 		7806F6B81DB772A400058E0D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		7806F6B91DB772A400058E0D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		781CFC511DB97175009BD4AC /* DrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
+		781CFC521DB97175009BD4AC /* DrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
 		7837CFB01DB3BA3B00D90494 /* SIITev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIITev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7837CFB41DB3BA3B00D90494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7837CFB61DB3BA3B00D90494 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +80,8 @@
 		783E04131DB6CEAB004C90AB /* WaterProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterProgress.m; sourceTree = "<group>"; };
 		787D2E131DB5703700B43A4A /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		787D2E141DB5703700B43A4A /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		789CD6FF1DB9FF4A0068FD0D /* emission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emission.png; path = ../../emission.png; sourceTree = "<group>"; };
+		789CD7061DBA72C40068FD0D /* cost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cost.png; path = ../../cost.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +142,8 @@
 				783E04131DB6CEAB004C90AB /* WaterProgress.m */,
 				7837CFF11DB3FA1800D90494 /* XYPieChart.h */,
 				7837CFF21DB3FA5100D90494 /* XYPieChart.m */,
+				781CFC511DB97175009BD4AC /* DrawViewController.h */,
+				781CFC521DB97175009BD4AC /* DrawViewController.m */,
 				7837CFB61DB3BA3B00D90494 /* AppDelegate.h */,
 				7837CFB71DB3BA3B00D90494 /* AppDelegate.m */,
 				7806F6B81DB772A400058E0D /* MainViewController.h */,
@@ -157,6 +166,8 @@
 		7837CFB31DB3BA3B00D90494 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				789CD7061DBA72C40068FD0D /* cost.png */,
+				789CD6FF1DB9FF4A0068FD0D /* emission.png */,
 				7837CFB41DB3BA3B00D90494 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -257,6 +268,7 @@
 				TargetAttributes = {
 					7837CFAF1DB3BA3B00D90494 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3A272BR84L;
 						ProvisioningStyle = Automatic;
 					};
 					7837CFCB1DB3BA3C00D90494 = {
@@ -297,6 +309,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7837CFC61DB3BA3B00D90494 /* LaunchScreen.storyboard in Resources */,
+				789CD7071DBA72C40068FD0D /* cost.png in Resources */,
+				789CD7001DB9FF4A0068FD0D /* emission.png in Resources */,
 				7837CFC31DB3BA3B00D90494 /* Assets.xcassets in Resources */,
 				7837CFC11DB3BA3B00D90494 /* Main.storyboard in Resources */,
 			);
@@ -329,6 +343,7 @@
 				7837CFB81DB3BA3B00D90494 /* AppDelegate.m in Sources */,
 				7806F6BA1DB772A400058E0D /* MainViewController.m in Sources */,
 				7837CFBB1DB3BA3B00D90494 /* FirstViewController.m in Sources */,
+				781CFC531DB97175009BD4AC /* DrawViewController.m in Sources */,
 				7837CFEA1DB3DB6700D90494 /* BackgroundLayer.m in Sources */,
 				7837CFB51DB3BA3B00D90494 /* main.m in Sources */,
 				787D2E151DB5703700B43A4A /* ThirdViewController.m in Sources */,
@@ -480,7 +495,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3A272BR84L;
 				INFOPLIST_FILE = SIITev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SIIT.SIITev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,7 +508,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3A272BR84L;
 				INFOPLIST_FILE = SIITev/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SIIT.SIITev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
