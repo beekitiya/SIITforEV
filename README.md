@@ -1,2 +1,3 @@
 # SIITforEV
-Mobile application for EV
+Applicatione for fomm EV on iPad
+Objective-C
